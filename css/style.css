@@ -219,7 +219,7 @@ body {
 /* ===== COURSE STATS ===== */
 .course-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-top: 1.5rem;
 }
@@ -775,5 +775,15 @@ body {
 
     .modulo-detail-header h1 {
         font-size: 1.5rem;
+    }
+
+    .course-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-stats {
+        grid-template-columns: 1fr;
     }
 }
