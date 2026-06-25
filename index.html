@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Formação Continuada em Robótica Educacional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <span>Robótica Educacional</span>
+            </div>
+            <nav class="header-nav">
+                <button class="nav-btn" onclick="showSection('home')">
+                    <i class="fas fa-home"></i> Início
+                </button>
+                <button class="nav-btn" onclick="showSection('trilha')">
+                    <i class="fas fa-route"></i> Trilha de Aprendizagem
+                </button>
+                <button class="nav-btn" onclick="showSection('sobre')">
+                    <i class="fas fa-info-circle"></i> Sobre o Curso
+                </button>
+            </nav>
+            <div class="user-info">
+                <span class="progress-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span id="progresso-total">0%</span> concluído
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="main-container">
+
+        <!-- SEÇÃO HOME -->
+        <section id="home" class="section active">
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <h1>Formação Continuada em Robótica Educacional</h1>
+                    <p class="hero-subtitle">Pensamento Computacional no Ensino Fundamental</p>
+                    <p class="hero-desc">Um curso online gratuito para professores da Educação Básica, alinhado à BNCC e à Resolução CNE/CEB nº 02/2025.</p>
+                    <button class="btn-primary btn-large" onclick="showSection('trilha')">
+                        <i class="fas fa-play"></i> Iniciar Curso
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Introdução -->
+                <div class="info-card">
+                    <h2><i class="fas fa-book-open"></i> Apresentação do Curso</h2>
+                    <p>Este curso foi desenvolvido para professores da Educação Básica que desejam integrar a robótica educacional e o pensamento computacional em suas práticas pedagógicas. A proposta parte do diagnóstico das necessidades formativas docentes e utiliza princípios de Design Instrucional e metodologias ativas.</p>
+
+                    <div class="course-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>16 horas</strong>
+                                <span>Carga Horária</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-layer-group"></i>
+                            <div>
+                                <strong>6 Módulos</strong>
+                                <span>Trilha Completa</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-laptop"></i>
+                            <div>
+                                <strong>100% Online</strong>
+                                <span>Estude no seu ritmo</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Justificativa -->
+                <div class="info-card">
+                    <h2><i class="fas fa-lightbulb"></i> Justificativa</h2>
+                    <p>A Resolução CNE/CEB nº 02/2025 e a BNCC estabelecem que todas as redes de ensino devem incorporar, a partir de 2026, competências ligadas ao Pensamento Computacional e à Educação Digital. A robótica educacional fortalece o aprendizado, permitindo que os alunos visualizem problemas e construam soluções práticas.</p>
+                    <p>Entretanto, a maioria dos professores do Ensino Fundamental não possui formação inicial ou continuada específica para integrar a robótica educacional de maneira pedagógica e contextualizada. Este curso busca preencher essa lacuna, oferecendo uma formação acessível, prática e alinhada às demandas curriculares contemporâneas.</p>
+
+                    <div class="highlight-box">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"A robótica educacional, quando integrada de forma interdisciplinar, potencializa a aprendizagem e estimula o pensamento lógico e criativo."</p>
+                    </div>
+                </div>
+
+                <!-- Objetivos -->
+                <div class="info-card">
+                    <h2><i class="fas fa-bullseye"></i> Objetivos de Aprendizagem</h2>
+                    <ul class="objectives-list">
+                        <li><i class="fas fa-check-circle"></i> Compreender os fundamentos da robótica educacional e do pensamento computacional</li>
+                        <li><i class="fas fa-check-circle"></i> Conhecer os principais kits e recursos de robótica disponíveis</li>
+                        <li><i class="fas fa-check-circle"></i> Utilizar ambientes de programação em blocos (Scratch/MakeCode)</li>
+                        <li><i class="fas fa-check-circle"></i> Explorar simuladores virtuais para atividades práticas</li>
+                        <li><i class="fas fa-check-circle"></i> Integrar a robótica ao currículo da BNCC de forma interdisciplinar</li>
+                        <li><i class="fas fa-check-circle"></i> Elaborar sequências didáticas e projetos aplicáveis em sala de aula</li>
+                    </ul>
+                </div>
+
+                <!-- Público-alvo -->
+                <div class="info-card">
+                    <h2><i class="fas fa-users"></i> Público-Alvo</h2>
+                    <p>Professores da Educação Básica (Ensino Fundamental I e II) que desejam:</p>
+                    <ul class="objectives-list">
+                        <li><i class="fas fa-arrow-right"></i> Iniciar ou aprofundar conhecimentos em robótica educacional</li>
+                        <li><i class="fas fa-arrow-right"></i> Integrar tecnologias digitais ao currículo escolar</li>
+                        <li><i class="fas fa-arrow-right"></i> Desenvolver o pensamento computacional em seus alunos</li>
+                        <li><i class="fas fa-arrow-right"></i> Criar atividades interdisciplinares com robótica</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="section">
+            <div class="content-wrapper">
+                <div class="info-card">
+                    <h2><i class="fas fa-info-circle"></i> Sobre o Curso</h2>
+                    <p>Este curso é fruto de uma pesquisa de mestrado do Programa de Pós-Graduação em Computação Aplicada da Universidade Presbiteriana Mackenzie, desenvolvida a partir do diagnóstico do perfil formativo de 27 professores da Educação Básica do estado de São Paulo.</p>
+
+                    <h3>Metodologia</h3>
+                    <p>O curso foi estruturado com base no modelo ADDIE de Design Instrucional, utilizando:</p>
+                    <ul class="objectives-list">
+                        <li><i class="fas fa-check"></i> <strong>Metodologias Ativas:</strong> Aprendizagem Baseada em Projetos (PBL) e Sala de Aula Invertida</li>
+                        <li><i class="fas fa-check"></i> <strong>Aprendizagem Criativa:</strong> Projetos, Paixão, Pares e Brincar (Resnick, 2017)</li>
+                        <li><i class="fas fa-check"></i> <strong>Simuladores Gratuitos:</strong> Tinkercad, Scratch e MakeCode</li>
+                        <li><i class="fas fa-check"></i> <strong>Formato Assíncrono:</strong> Estude no seu ritmo, quando e onde quiser</li>
+                    </ul>
+
+                    <h3>Referências Curriculares</h3>
+                    <ul class="objectives-list">
+                        <li><i class="fas fa-book"></i> Base Nacional Comum Curricular (BNCC) - Competência Geral de Cultura Digital</li>
+                        <li><i class="fas fa-book"></i> Resolução CNE/CEB nº 02/2025 - Pensamento Computacional obrigatório</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO TRILHA -->
+        <section id="trilha" class="section">
+            <div class="content-wrapper">
+                <div class="trilha-header">
+                    <h2><i class="fas fa-route"></i> Trilha de Aprendizagem</h2>
+                    <p>Complete os 6 módulos na ordem. Cada módulo contém apresentação, material de estudo, videoaulas práticas e um quiz de avaliação.</p>
+                </div>
+
+                <div class="modulos-grid">
+                    <!-- MÓDULO 1 -->
+                    <div class="modulo-card" data-modulo="1" onclick="openModulo(1)">
+                        <div class="modulo-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="modulo-num">Módulo 01</span>
+                            <i class="fas fa-graduation-cap modulo-icon"></i>
+                        </div>
+                        <div class="modulo-body">
+                            <h3>Introdução à Robótica Educacional</h3>
+                            <p>Compreender o papel da robótica e do pensamento computacional na BNCC e conhecer a organização do curso.</p>
+                            <div class="modulo-meta">
+                                <span><i class="fas fa-clock"></i> 2h30</span>
+                                <span><i class="fas fa-tasks"></i> 4 atividades</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-1" style="width: 0%"></div>
+                            </div>
+                            <span class="status-badge" id="status-1">Não iniciado</span>
+                        </div>
+                    </div>
+
+                    <!-- MÓDULO 2 -->
+                    <div class="modulo-card" data-modulo="2" onclick="openModulo(2)">
+                        <div class="modulo-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="modulo-num">Módulo 02</span>
+                            <i class="fas fa-microchip modulo-icon"></i>
+                        </div>
+                        <div class="modulo-body">
+                            <h3>Kits de Robótica</h3>
+                            <p>Identificar e conhecer os componentes: Arduino, Microbit e Kit LEGO Educacional.</p>
+                            <div class="modulo-meta">
+                                <span><i class="fas fa-clock"></i> 2h30</span>
+                                <span><i class="fas fa-tasks"></i> 4 atividades</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-2" style="width: 0%"></div>
+                            </div>
+                            <span class="status-badge" id="status-2">Não iniciado</span>
+                        </div>
+                    </div>
+
+                    <!-- MÓDULO 3 -->
+                    <div class="modulo-card" data-modulo="3" onclick="openModulo(3)">
+                        <div class="modulo-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="modulo-num">Módulo 03</span>
+                            <i class="fas fa-puzzle-piece modulo-icon"></i>
+                        </div>
+                        <div class="modulo-body">
+                            <h3>Programação em Blocos</h3>
+                            <p>Utilizar ambientes de programação em blocos (Scratch/MakeCode) em desafios simples.</p>
+                            <div class="modulo-meta">
+                                <span><i class="fas fa-clock"></i> 3h</span>
+                                <span><i class="fas fa-tasks"></i> 4 atividades</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-3" style="width: 0%"></div>
+                            </div>
+                            <span class="status-badge" id="status-3">Não iniciado</span>
+                        </div>
+                    </div>
+
+                    <!-- MÓDULO 4 -->
+                    <div class="modulo-card" data-modulo="4" onclick="openModulo(4)">
+                        <div class="modulo-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span class="modulo-num">Módulo 04</span>
+                            <i class="fas fa-flask modulo-icon"></i>
+                        </div>
+                        <div class="modulo-body">
+                            <h3>Simuladores e Eletrônica Básica</h3>
+                            <p>Explorar simuladores (Tinkercad) para compreender sensores, atuadores e circuitos básicos.</p>
+                            <div class="modulo-meta">
+                                <span><i class="fas fa-clock"></i> 3h</span>
+                                <span><i class="fas fa-tasks"></i> 4 atividades</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-4" style="width: 0%"></div>
+                            </div>
+                            <span class="status-badge" id="status-4">Não iniciado</span>
+                        </div>
+                    </div>
+
+                    <!-- MÓDULO 5 -->
+                    <div class="modulo-card" data-modulo="5" onclick="openModulo(5)">
+                        <div class="modulo-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="modulo-num">Módulo 05</span>
+                            <i class="fas fa-sitemap modulo-icon"></i>
+                        </div>
+                        <div class="modulo-body">
+                            <h3>Interdisciplinaridade e Sequências Didáticas</h3>
+                            <p>Integrar robótica e pensamento computacional a conteúdos da BNCC, elaborando mini-projetos.</p>
+                            <div class="modulo-meta">
+                                <span><i class="fas fa-clock"></i> 2h30</span>
+                                <span><i class="fas fa-tasks"></i> 4 atividades</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-5" style="width: 0%"></div>
+                            </div>
+                            <span class="status-badge" id="status-5">Não iniciado</span>
+                        </div>
+                    </div>
+
+                    <!-- MÓDULO 6 -->
+                    <div class="modulo-card" data-modulo="6" onclick="openModulo(6)">
+                        <div class="modulo-header" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span class="modulo-num">Módulo 06</span>
+                            <i class="fas fa-project-diagram modulo-icon"></i>
+                        </div>
+                        <div class="modulo-body">
+                            <h3>Projeto Final</h3>
+                            <p>Elaborar uma sequência didática completa em robótica, adequada à sua realidade escolar.</p>
+                            <div class="modulo-meta">
+                                <span><i class="fas fa-clock"></i> 2h30</span>
+                                <span><i class="fas fa-tasks"></i> 4 atividades</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-6" style="width: 0%"></div>
+                            </div>
+                            <span class="status-badge" id="status-6">Não iniciado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DO MÓDULO (DINÂMICA) -->
+        <section id="modulo-content" class="section">
+            <div class="content-wrapper">
+                <button class="btn-back" onclick="showSection('trilha')">
+                    <i class="fas fa-arrow-left"></i> Voltar para Trilha
+                </button>
+                <div id="modulo-dynamic-content"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 - Curso de Formação Continuada em Robótica Educacional</p>
+            <p>Universidade Presbiteriana Mackenzie | Programa de Pós-Graduação em Computação Aplicada</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
