@@ -11,8 +11,8 @@ const modulos = {
             url: "https://www.youtube.com/embed/qA8SmvxAZH8"
         },
         video2: {
-            titulo: "Pensamento Computacional na BNCC",
-            url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            titulo: "Pensamento Computacional e a BNCC",
+            url: "https://www.youtube.com/embed/PcJ9gNlYIPc"
         },
         quiz: [
             { pergunta: "1. Qual documento estabelece a cultura digital como competência geral da educação no Brasil?", opcoes: ["Lei de Diretrizes e Bases (LDB)", "Base Nacional Comum Curricular (BNCC)", "Parâmetros Curriculares Nacionais (PCN)", "Plano Nacional de Educação (PNE)"], correta: 1 },
