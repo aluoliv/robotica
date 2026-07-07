@@ -8,7 +8,7 @@ const modulos = {
         pdf: "assets/pdfs/modulo1.pdf",
         video1: {
             titulo: "O que é Robótica Educacional?",
-            url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            url: "https://www.youtube.com/watch?v=qA8SmvxAZH8"
         },
         video2: {
             titulo: "Pensamento Computacional na BNCC",
